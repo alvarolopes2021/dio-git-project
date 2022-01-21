@@ -1,0 +1,12 @@
+git config --global --unset user.email
+
+git config --global --unset user.name
+
+git remote add origin https://github.com/alvaro/livro-receitas.git
+
+git remote -v
+
+git push origin master
+
+podemos fazer commits pela plataforma:
+	qualquer arquivo criado ou editado no github gera um commit lá

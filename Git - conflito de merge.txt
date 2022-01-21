@@ -1,0 +1,9 @@
+Conflito de merge
+
+voce tentar subir um arquivo que já stá diferente do da sua máquina, só que la no repo
+
+tenta dar um pull e o git tenta mesclar pra voce
+
+se não der, deu conflito de merge, resolva voce mesmo o problema
+
+Ao dar um clone, o git já sabe qual a origin que deve subir 

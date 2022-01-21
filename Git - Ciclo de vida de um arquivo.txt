@@ -1,0 +1,43 @@
+1 - 2 estados principais
+
+# Tracked  - git sabe que o file existe
+
+# Untracked - git não sabe que po arquivo existe
+
+Staged - onde os arquvios estão antes de participar de outro tipo de agrupamento
+
+
+1 - Untracked
+
+	1 - Novos arquivos
+
+2 - Tracked
+	
+	1 - Unmodified
+	
+	2 - Modified
+	
+	3 - Staged
+	
+	O próximo passo é o commit em si
+	
+	
+O commit é como se fosse uma foto do código naquele momento
+
+e depois ele volta para Untracked
+
+
+# Dividimos em Ambiente de desenvolvimento e Servidor remoto
+
+	Ambiente de desenvolvimento:
+		
+		Working directory
+		
+		Staging area
+		
+		Local Rpository
+		
+		
+	Servidor:
+	
+		

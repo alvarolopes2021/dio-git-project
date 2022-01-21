@@ -1,0 +1,27 @@
+Para subir no GitHub temos que nos autenticar
+
+Hoje não temos mais como subir usando nome e senha
+
+1 - Chave SSH
+
+	a máquina fica assinada 
+	
+	Settings -> Chave SSH e GPG Keys
+	
+	com isso geramos uma chave para máquina
+	
+	realizado os comandos para gerar a chave, insertamos a chave no GitHub, no caminho mostrado acima
+	
+	depois nós voltamos para o CLI e iniciamos o processo de Agent pid para rodar o agente gerenciador de chaves
+	
+	Com chave SSH NÃO podemos usar o HTTPS
+	
+	
+2 - Token de acesso pessoal
+
+	gerar um token no git hub e em commits ao invés da senha usamos o token
+	
+	usamos o HTTPS 
+	
+	e ao usar o GCC - Git Credential Core - abre janelinha de auth
+	colocamos o token

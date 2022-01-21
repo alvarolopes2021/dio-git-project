@@ -1,0 +1,89 @@
+Git e GitHub
+
+Sistema de versionamento de código distribuido
+
+ajuda a monitorar diferentes versões do nosso código
+
+o Linus não inventou - já tinha um sistema de versionamento, mas ele não estava feliz e criou o git
+
+
+O GitHub é onde voce guarda o código
+
+1 - controle de versão
+
+2 - armazenamento em nuver - repositório em nuvem, GitHub
+
+3 - Trabalho em equipe
+
+4 - Melhorar seu código
+
+5 - Reconhecimento - espécie de rede social
+
+############################################################################################
+
+1 - COMO O GIT FUNCIONA
+
+SHA1 - algoritmo de encriptação - Security Hash Algorithm - a saída gera um conjunto de caracteres de 40 dígitos
+	Por ser hash - uma mesma sequencia gera sempre os mesmos 40 dígitos
+	
+O SHA1 permite que o git descubra que um arquivo foi modificado ou não, como um arquivo com os mesmos caracteres gera a mesma chave, se um arquivo não foi modificado, siginifica que ele está com a chave antiga ainda 
+
+
+openssl sha1 myFile.txt  - cospe um hash
+
+############################################################################################
+
+2 - Tipos básicos do GIT
+
+BLOBS - 
+
+	não guarda o nome do arquivo
+
+	echo 'conteudo' | git hash-object --stdin  -> usando funçao do git
+	
+		cospe um sha1 desta string
+	
+	echo -e 'conteudo' | openssl sha1   -> usando o openssl
+			
+		cospe uma outra sequencia de caracteres
+		
+	echo -e 'blob 9\0conteudo' | openssl sha1  
+	
+		passando o blob ele gera a msm sequencia da funçao git
+		
+	O git ele guarda metadados nos arquivos
+	
+TREE - 
+	
+	também contém metadados
+	
+	ela guarda o nome do arquvio, o sha1 dele e o blob (que tem sha1)
+		
+	monta a estrutura dos arquivos
+	
+	uma árvore pode apontar para outra árvore, como nos diretórios
+	
+	Se mudarmos um arquivo, mudamos também a estrutura de arquivos da 	arvore
+	
+	
+COMMIT - 
+	commit aponta para uma árvore	
+	aponta para um parente - ultimo commit antes dele - cria linha do tempo
+	aponta para um autor
+	aponta para uma mensagem
+	
+	posso escrever uma mensagem que explica o commit
+	
+	ele tem um timestamp - data hora de quando foi criado
+	
+	tem um sha1 Também
+	
+3 - Por que é um sistem distribuído
+
+	o código que está na nuvem é a mais recente e mais atualizada
+	
+	na máquina dos maintainers existe versões distribuidas do código
+	
+	
+	
+	

@@ -1,0 +1,9 @@
+git init
+
+git config --global user.email "lalala@lalal.com"
+git config --global user.name alvaro
+
+git add
+
+git commit
+
